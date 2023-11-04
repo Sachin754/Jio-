@@ -1,0 +1,42 @@
+.contactDetailsContainer {
+
+  .fieldsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    .inputField {
+        max-width: 22.5rem;
+      }
+    .mobileEmail {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .permanentAddress {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      .pinAndCity {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+    .contactDetailsContainer{
+      background-color: #FFF;
+      padding:1rem 1.5rem;
+        .fieldsContainer{
+            .mobileEmail{
+                flex-direction: row;
+                gap:1.5rem;
+            }
+            .inputField{
+                width: 22.5rem;
+            }
+        }
+    }
+}

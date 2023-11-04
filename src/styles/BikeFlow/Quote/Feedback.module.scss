@@ -1,0 +1,39 @@
+.feedbackSection{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .heading{
+        margin-bottom: 0.5rem;
+
+    }
+    .options{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .question{
+            font-size: 1.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.5rem; /* 133.333% */
+letter-spacing: -0.00563rem;
+        }
+        .radioOptions{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .option{
+              
+                padding: 0.75rem;
+            border-radius: var(--spacing-3, 0.75rem);
+    border: 1px solid var(--light-purple-grey-40, #E0E0E0);
+            }
+
+        }
+    }
+    .btn{
+        background-color: var(--primary-color-60);
+        color: white;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,75 @@
+.confirmationCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  .successContainerWithDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .successContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      .title {
+        color: var(--secondary-color-100, #141414);
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 1.75rem; /* 116.667% */
+        letter-spacing: -0.045rem;
+      }
+      .editBtn {
+        width: 5.5rem;
+      }
+    }
+    .details {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      border-radius: var(--radius-radius-medium, 0.5rem);
+      border: 1px solid var(--light-crimson-grey-60, #b5b5b5);
+      padding: 1rem;
+
+      .vechileDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        .registeration {
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.5rem; /* 133.333% */
+          letter-spacing: -0.00563rem;
+        }
+        .vechileInfo {
+          color: var(--light-crimson-grey-80, rgba(0, 0, 0, 0.65));
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.25rem; /* 142.857% */
+          letter-spacing: -0.00438rem;
+          text-transform: uppercase;
+        }
+      }
+      .vechileImg {
+        height: 7rem;
+        width: 4rem;
+        object-fit: contain;
+        margin-right: 2rem;
+      }
+    }
+  }
+  .policyTypeContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .continueBtn {
+    background-color: var(--primary-color-60);
+    color: white;
+    width: 19rem;
+  }
+}

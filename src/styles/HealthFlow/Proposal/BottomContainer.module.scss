@@ -1,0 +1,55 @@
+.bottomContainer {
+  display: flex;
+  height: max-content;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-spacing-s, 0.75rem);
+
+  .insurancePlanNameImageIcon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .insurancePlan {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      .insurancePlanImage {
+        width: 6.25rem;
+        height: 2.25rem;
+        flex-shrink: 0;
+        border-radius: 0.5rem;
+        //   object-fit: contain;
+      }
+      .planImageName {
+        display: flex;
+        flex-direction: column;
+        .amountColor {
+          color: var(--primary-color-60);
+        }
+      }
+    }
+    .iconStyling {
+      width: 2rem;
+      margin-left: auto;
+      color: var(--primary-color-60);
+      cursor: pointer;
+    }
+  }
+  .continueNextBtn {
+    min-width: 20.5rem;
+    background: var(--primary-color-60);
+    padding: 0.5rem 0rem;
+  }
+}
+
+@media screen and (min-width:991px) {
+  .bottomContainer{
+    background-color: #FFF;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+  
+}

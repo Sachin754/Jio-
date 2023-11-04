@@ -1,0 +1,261 @@
+.insuranceCardContainer {
+  padding: 1.5rem 1.5rem 0.75rem 1.5rem;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  background: var(--primary-color-50);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  // margin-top: 0.5rem;
+  .title {
+    text-align: center;
+    color: var(--light-sky-inverse, #fff);
+    line-height: 1.25rem; /* 125% */
+    letter-spacing: -0.03rem;
+    // margin: 1.5rem 0rem;
+  }
+  .card {
+    background-color: var(--white-color);
+    // margin: 0.8rem auto;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    .healthInput {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .genderOptions {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-around;
+        .genderOption {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.5rem;
+          //    width: 5.33rem;
+          //    width: 8.25rem;
+          //    gap: 0.75rem;
+          height: 3rem;
+          border-radius: var(--spacing-3, 0.75rem);
+          border: 1px solid var(--primary-color-40);
+          .activeIcon {
+            color: var(--primary-color-50);
+            width: 2rem;
+            height: 2rem;
+          }
+          .inactiveIcon {
+            color: var(--primary-color-30);
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+        .inactiveGenderOption {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.5rem;
+          //    width: 5.3rem;
+          height: 3rem;
+          border-radius: var(--spacing-3, 0.75rem);
+          border: 1px solid #e0e0e0;
+          .activeIcon {
+            color: var(--primary-color-50);
+            width: 2rem;
+            height: 2rem;
+          }
+          .inactiveIcon {
+            color: var(--primary-color-30);
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+    .btn {
+      background-color: var(--primary-color-50);
+      margin-top: -0.75rem;
+    }
+    .divider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .hr {
+        width: 12rem;
+      }
+      .orText {
+        color: var(--secondary-color-80);
+        margin: 0rem 1rem;
+      }
+    }
+    .boughtCar {
+      color: var(--primary-color-50);
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.5rem; /* 150% */
+      letter-spacing: -0.005rem;
+    }
+  }
+  .plansBtnOuterContainer {
+    width: 100%;
+    .plansBtnContainer {
+      display: flex;
+      width: 100%;
+      padding: var(--spacing-spacing-base, 1rem);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: var(--spacing-spacing-s, 0.75rem);
+      align-self: stretch;
+      border-radius: var(--radius-radius-xl, 1.5rem);
+      background: var(--primary-color-60);
+      .title {
+        color: var(--light-sky-inverse, #fff);
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 0.875rem; /* 100% */
+        letter-spacing: -0.00438rem;
+      }
+      .description {
+        color: var(--light-sky-inverse, #fff);
+        text-align: center;
+        // font-family: JioType;
+        font-size: 0.7rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1rem; /* 160% */
+        letter-spacing: -0.00313rem;
+      }
+      .seePlansBtn {
+        // width: 100%;
+        color: var(--white-color);
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        align-self: stretch;
+        background: var(--primary-color-60);
+      }
+    }
+  }
+  .alreadyBoughtContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    .alreadyText {
+      color: var(--light-sky-inverse, #fff);
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 0.875rem; /* 100% */
+      letter-spacing: -0.00438rem;
+    }
+    .renewContainer {
+      display: flex;
+      gap: 0.2rem;
+      .renewText {
+        color: var(--light-sky-inverse, #fff);
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 1.5rem; /* 171.429% */
+        letter-spacing: -0.00438rem;
+      }
+      .arrowNextIcon {
+        width: 1rem;
+        color: var(--light-sky-inverse, #fff);
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .insuranceCardContainer {
+    .title {
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 2rem; /* 100% */
+      letter-spacing: -0.06rem;
+      max-width: 40rem;
+      text-align: center;
+      margin: 1.5rem 0rem;
+    }
+    .card {
+      border-radius: 1.5rem;
+      box-shadow: none;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2rem auto;
+      width: 70vw;
+      background: #fff;
+      box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+      .title {
+        font-size: 1.75rem;
+        line-height: 2rem;
+      }
+      .healthInput {
+        .genderOptions {
+          justify-content: space-between;
+          gap: 3rem;
+          .genderOption {
+            width: 10rem;
+            gap: 0.75rem;
+            padding: 0.5rem 1rem;
+          }
+          .inactiveGenderOption {
+            width: 10rem;
+            gap: 0.75rem;
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+      .inputField {
+        width: 19rem;
+      }
+      .btn {
+        width: 17rem;
+        // height: 3rem;
+      }
+    }
+    .plansBtnOuterContainer {
+      margin: 2rem 0rem;
+      width: 100%;
+      .plansBtnContainer {
+        justify-content: center;
+        width: 35rem;
+        padding: 1.5rem;
+        .title {
+          color: var(--light-sky-inverse, #fff);
+          font-size: 1.5rem;
+          margin: 0rem;
+        }
+        .description {
+          color: var(--light-sky-inverse, #fff);
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.5rem; /* 150% */
+          letter-spacing: -0.005rem;
+        }
+        .seePlansBtn {
+          width: 17.5rem;
+          font-weight: 300;
+        }
+      }
+    }
+    .alreadyBoughtContainer {
+      .alreadyText {
+        font-size: 1rem;
+      }
+      .renewContainer {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

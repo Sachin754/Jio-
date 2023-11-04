@@ -1,0 +1,74 @@
+.twoWheelerDetailsContainer {
+  .fieldsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    .registrationNumberAndDate {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .engineAndChasisNumber {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .vehicleFinancedDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      .radioBtnsContainer{
+        display: flex;
+        flex-direction: column;
+        gap:0.5rem;
+      .prosperInputFields {
+        display: flex;
+        gap: 1rem;
+        .prosperLabelContainer {
+          display: flex;
+          width: 9.25rem;
+          padding: var(--spacing-3, 0.75rem);
+          align-items: center;
+          gap: 0.75rem;
+          border-radius: var(--spacing-3, 0.75rem);
+          border: 1px solid var(--light-sky-grey-40, #e0e0e0);
+          .prosperInputField {
+            color: var(--secondary-color-100);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.25rem; /* 142.857% */
+            letter-spacing: -0.00438rem;
+          }
+        }
+      }
+    }
+    }
+    .inputField {
+      width: 22.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .twoWheelerDetailsContainer {
+    padding:1rem 1.5rem;
+    .fieldsContainer {
+      .registrationNumberAndDate {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+      .engineAndChasisNumber {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+      .vehicleFinancedDetails {
+        flex-direction: row;
+        gap: 4.5rem;
+        .radioBtnsContainer {
+          gap:1rem;
+        }
+      }
+    }
+  }
+}

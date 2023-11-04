@@ -1,0 +1,108 @@
+.featuresSection {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  .featuresContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .featuresTitle {
+      color: var(--primary-color-80);
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 1.75rem; /* 116.667% */
+      letter-spacing: -0.045rem;
+      width: 18.125rem;
+    }
+    .featuresText {
+      color: var(--secondary-color-80);
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 1rem; /* 133.333% */
+      letter-spacing: 0.00375rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .featuresContainer {
+    display: flex;
+    gap: 1.36rem;
+    flex-direction: column;
+    align-items: center;
+    .featureImg {
+      width: 100%;
+    }
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.88rem;
+      .feature {
+        display: flex;
+        gap: 1rem;
+        .featureImg {
+          width: 2rem;
+          height: 2rem;
+        }
+        .featureText {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          .featureTitle {
+            color: var(--primary-color-80);
+            font-size: 1.125rem;
+            font-weight: 700;
+            line-height: 1.5rem; /* 133.333% */
+            letter-spacing: -0.00563rem;
+          }
+          .featureDescription {
+            color: var(--secondary-color-80);
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.25rem; /* 142.857% */
+            letter-spacing: -0.00438rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .featuresSection {
+    padding: 2.5rem 10rem;
+    gap: 2.62rem;
+  justify-content: space-between;
+    .featuresContent {
+      .featuresText {
+        color: var(--primary-color-40);
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: 700;
+        margin: 0.25rem 0rem;
+      }
+      .featuresTitle {
+        color: var(--light-purple-80, #1b0633);
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 1.5rem; /* 133.333% */
+        width: 100%;
+      }
+    }
+
+    .featuresContainer {
+      width: 100%;
+      gap: 2rem;
+      flex-direction: row;
+      align-items: center;
+      .featureImg {
+        width: 30.3125rem;
+        height:auto;
+      }
+      .featureText{
+          
+      }
+    }
+  }
+}

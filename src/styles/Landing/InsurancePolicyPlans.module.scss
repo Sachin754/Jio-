@@ -1,0 +1,59 @@
+.policyPlansContainer {
+    padding:1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+  .headingSection {
+    .title {
+      color: var(--primary-color-40);
+      text-align: center;
+      line-height: 1rem; /* 133.333% */
+      letter-spacing: 0.00375rem;
+      text-transform: uppercase;
+    }
+    .mainHeading {
+        color: var(--secondary-color-100);
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1.75rem; /* 116.667% */
+        letter-spacing: -0.045rem;
+    }
+  }
+  .cardsContainer {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap:0.75rem;
+    .imageContainer {
+      object-fit: contain;
+      min-width: 19.5rem;
+    }
+  }
+  .cardsContainer::-webkit-scrollbar{
+    display: none;
+  }
+ 
+}
+
+
+@media screen and (min-width: 768px){
+    .policyPlansContainer{
+        gap:1rem;
+        .headingSection
+        {
+            .mainHeading{
+                 font-size: 2rem;
+
+                 max-width: 40rem;
+            }
+        }
+        .cardsContainer{
+            gap:1.5rem;
+    }
+}
+}

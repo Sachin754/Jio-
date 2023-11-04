@@ -1,0 +1,68 @@
+.proposalFormContainer {
+  .stepperContactContainer {
+  }
+  .insurancePlanBottomContainer{
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .proposalFormContainer {
+    padding: 1rem 8rem;
+    background: var(--light-purple-grey-20, #f5f5f5);
+    .stepperContactContainer {
+      display: flex;
+      // justify-content: space-between;
+      gap: 2rem;
+      .headingSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .orderId {
+          color: var(--secondary-color-80);
+        }
+      }
+      .stepperContainer {
+        max-width: 60rem;
+        height: 50rem;
+        border-radius: 1.5rem;
+        background: var(--light-purple-inverse, #fff);
+        margin-top: 0.9rem;
+        .stepItemContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+      }
+      .rightContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+        margin-top: 2.7rem;
+        .insurancePlanContainer{
+          border-radius: var(--radius-radius-xl, 1.5rem);
+          background: #fff;
+        }
+      }
+    }
+  }
+  .desktopReviewDetails{
+    // width: 70vw;
+    // margin: 0 auto;
+    // padding: 0rem 10rem;
+    // display: flex;
+    // gap: 0rem;
+    margin: 0rem 10rem;
+    display: flex;
+    gap: 1rem;
+    .rightContainer{
+      margin-top: 6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+
+  }
+}

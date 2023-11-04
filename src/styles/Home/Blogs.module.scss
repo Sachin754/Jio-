@@ -1,0 +1,63 @@
+.blogCard {
+  min-width: 18.75rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+  .blogCardImg {
+    min-width: 100%;
+  }
+
+  .blogCardText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    .blogCardTitle {
+      color: var(--secondary-color-100);
+      text-align: left;
+      line-height: 1.5rem; /* 133.333% */
+      letter-spacing: -0.00563rem;
+    }
+
+    .blogCardDesc {
+      color:var(--secondary-color-80);
+      line-height: 1.5rem; /* 150% */
+      letter-spacing: -0.005rem;
+      text-align: justify;
+    }
+
+    .blogCardBtn {
+      text-align: left;
+      color: var(--primary-color-50);
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5rem; /* 150% */
+      margin-top: 0.5rem;
+      letter-spacing: -0.005rem;
+      border: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blogCard {
+    width:22rem;
+    border-radius: 1.5rem;
+    // box-shadow: var(--box-shodow);
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+
+    .blogCardImg {
+    width:100%;
+    }
+  }
+}
+
+// Card styling

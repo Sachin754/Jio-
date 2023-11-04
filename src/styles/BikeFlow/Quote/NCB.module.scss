@@ -1,0 +1,52 @@
+.ncbSection {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  .heading {
+    color: var(--secondary-color-100);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.75rem; /* 116.667% */
+    letter-spacing: -0.045rem;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .questionAndOptions{
+      display: flex;
+      flex-direction: column;
+      gap:0.5rem;
+    .question {
+      color: var(--light-sky-80, #001e2b);
+      font-weight: 700;
+      line-height: 1.25rem; /* 142.857% */
+      letter-spacing: -0.00438rem;
+    }
+    .radioOptions {
+      display: flex;
+      justify-content: space-between;
+
+      .option {
+        width: 10rem;
+        padding: 0.75rem;
+        border-radius: var(--spacing-3, 0.75rem);
+        border: 1px solid var(--light-purple-grey-40, #e0e0e0);
+      }}
+    }
+}
+// .buttons {
+//   margin: 0 auto;
+//   display: flex;
+//   gap: 1rem;
+//   justify-content: space-between;
+  .btn {
+    background-color: var(--primary-color-60);
+    color: white;
+    padding: 0.7rem 2.5rem;
+    width: 100%;
+  }
+// }
+}

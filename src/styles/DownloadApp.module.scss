@@ -1,0 +1,118 @@
+.downloadAppContainer {
+  padding: 2.5rem 1.5rem;
+  .headingContent {
+    .title {
+      color: var(--light-sky-grey-80);
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5rem; /* 150% */
+      text-align: center;
+    }
+    .subTitle {
+      color: var(--primary-color-80);
+      text-align: center;
+      font-weight: 900;
+      line-height: 1.75rem; /* 116.667% */
+      letter-spacing: -0.045rem;
+    }
+  }
+  .mobileFeatures {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    .mobileImgContainer {
+      width: 22rem;
+      // .mobileImg{
+      //       // object-fit: contain;
+      // }
+    }
+    .Features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      .feature {
+        display: flex;
+        gap: 1.12rem;
+        .featureIcon {
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+        .featureText {
+          color: var(--primary-color-80);
+          font-weight: 700;
+          line-height: 1.5rem; /* 150% */
+        }
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    .appStoreBtn,
+    .playStoreBtn {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: var(--primary-color-50);
+      border-radius: 15.625rem;
+      width: 19.5rem;
+      padding: 0.625rem 1.25rem;
+      align-items: center;
+      gap: 0.5rem;
+      align-self: stretch;
+      .logoIcon {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+      .btnText {
+        color: var(--light-sky-inverse, #fff);
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem; /* 150% */
+        letter-spacing: -0.005rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .downloadAppContainer {
+    padding: 0rem 3rem;
+    .headingContent {
+      .title {
+        font-size: 1rem;
+      }
+      .subTitle {
+        font-size: 2rem;
+      }
+    }
+
+    .mobileFeatures {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .downloadAppContainer {
+    padding: 2rem 9rem;
+    .headingContent {
+      .title {
+        font-size: 1rem;
+      }
+      .subTitle {
+        font-size: 2rem;
+      }
+    }
+
+    .mobileFeatures {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

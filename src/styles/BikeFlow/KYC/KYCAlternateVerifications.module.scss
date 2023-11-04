@@ -1,0 +1,192 @@
+.kycAlternateVerificationsContainer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  .panVerificationFailedContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .imageContainer {
+      width: 4.2rem;
+      height: 4rem;
+      object-fit: contain;
+    }
+    .title {
+      color: var(--primary-color-80);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.5rem; /* 150% */
+    }
+    .subTitle {
+      color: var(--secondary-color-80);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1rem; /* 133.333% */
+      letter-spacing: -0.00375rem;
+    }
+  }
+ 
+  .verificationsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .aadharVerificationContainer {
+      display: flex;
+      padding: var(--spacing-spacing-s, 0.75rem);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      border-radius: var(--radius-radius-large, 1rem);
+      border: 3px solid var(--primary-color-20);
+      .content {
+        display: flex;
+        padding: 0.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.625rem;
+        align-self: stretch;
+        //   border: 2px solid red;
+        .heading {
+          color: var(--secondary-color-100);
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1rem; /* 133.333% */
+          letter-spacing: -0.00375rem;
+          .subHeading {
+            color: var(--secondary-color-80);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1rem;
+            letter-spacing: -0.00375rem;
+          }
+        }
+        .subContent {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.75rem;
+          align-self: stretch;
+          .stepp {
+            display: flex;
+            gap: 0.4rem;
+            .numberContainer {
+              display: flex;
+              width: 1.125rem;
+              height: 1.125rem;
+              justify-content: center;
+              align-items: center;
+              border-radius: 7.03125rem;
+              border: 0.563px solid var(--primary-color-60);
+              background: var(--primary-color-20);
+              .number {
+                color: var(--primary-color-60);
+                text-align: center;
+                font-size: 0.5625rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 0.84375rem; /* 150% */
+                letter-spacing: -0.00281rem;
+              }
+            }
+            .stepText {
+              color: var(--secondary-color-80);
+              font-size: 0.75rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 1rem; /* 133.333% */
+              letter-spacing: -0.00375rem;
+            }
+          }
+        }
+      }
+    }
+  
+}
+  .noteContainer {
+    .noteText {
+      color: var(--secondary-color-80);
+      text-align: justify;
+      font-size: 0.5625rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 0.7875rem */
+      letter-spacing: -0.00281rem;
+      padding:0rem 1rem;
+      .policyText {
+        color: var(--primary-color-50);
+        font-size: 0.5625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -0.00281rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:991px){
+  .kycAlternateVerificationsContainer{
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+    gap: 0rem;
+    .panVerificationFailedContainer{
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: row;
+      align-items: center;
+      .title{
+        font-size: 1.5rem;
+font-style: normal;
+font-weight: 900;
+line-height: 1.75rem; /* 116.667% */
+letter-spacing: -0.045rem;
+      }
+      .subTitle{
+        font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.25rem; /* 142.857% */
+letter-spacing: -0.00438rem;
+      }
+      .imageContainer{
+        height: 7rem;
+        width: 5rem;
+        object-fit: contain;
+        
+      }
+    }
+  
+    .verificationsContainer{
+      flex-direction: row;
+      background-color: #FFF;
+      padding: 2.5rem;
+      border-radius: 1.5rem 1.5rem 0rem 0rem;
+      .aadharVerificationContainer{
+        width: 50%;
+      }
+      
+    
+  }
+    .noteContainer{
+      // align-items: center;
+      background-color: #FFF;
+      // padding: 0rem 15rem;
+      padding-right: 30rem;
+      padding-left: 2.5rem;
+      
+      align-items: flex-start;
+      .noteText{
+      text-align: left;
+      
+       }
+    }
+    .bottomButton{
+      background-color: #FFF;
+      padding: 2.5rem;
+      border-radius: 0rem 0rem 1.5rem 1.5rem;
+    }
+  }
+}

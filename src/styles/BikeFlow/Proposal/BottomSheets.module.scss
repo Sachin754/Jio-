@@ -1,0 +1,59 @@
+//Proposal BottomSheets
+//Inspection Required BottomSheet styling
+.inspectionCard {
+  .content {
+    .features {
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: column;
+      margin: 1.5rem 0rem;
+      .feature {
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-start;
+        .tickIcon {
+          max-width: 1.3rem;
+          //   height: 1.3rem;
+        }
+        .featureText {
+          color: var(--secondary-color-100);
+          font-weight: 520;
+        }
+      }
+    }
+    .btn {
+      max-width: 19.5rem;
+      margin-bottom: 1.5rem;
+      background: var(--primary-color-60);
+    }
+  }
+}
+
+//InsuranceInforBottomSheet styling
+
+.insuranceInfoCard {
+  .content {
+    .insuranceInfoFinalPremium {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-bottom: 1.5rem;
+      .insuranceInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .insuranceInfoFieldValue {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .finalPremiumContainer {
+        display: flex;
+        justify-content: space-between;
+        .amount {
+          color: #249f21;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.careersCardBackground {
+  background: var(--primary-color-50);
+  padding: 1.5rem;
+  .careersHeading {
+    color: var(--light-sky-inverse, #fff);
+    text-align: center;
+    line-height: 1.75rem; /* 116.667% */
+    letter-spacing: -0.045rem;
+    margin-bottom: 1.5rem;
+  }
+  .careersCard {
+    border-radius: var(--spacing-7, 2.5rem);
+    background: #fff;
+    display: flex;
+    padding: 2.625rem 1rem 0rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    align-self: stretch;
+    .leftContent {
+      .title {
+        color: var(--primary-color-30);
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 1rem; /* 133.333% */
+        letter-spacing: 0.00375rem;
+        text-transform: uppercase;
+        margin-bottom: 0.25rem;
+      }
+      .subTitle {
+        color: var(--secondary-color-100);
+        line-height: 2rem; /* 100% */
+        letter-spacing: -0.06rem;
+        margin-bottom: 0.5rem;
+      }
+      .description {
+        color: var(--primary-color-70);
+        font-weight: 500;
+        line-height: 1.5rem; /* 150% */
+        letter-spacing: -0.005rem;
+      }
+      .viewOpeningsBtn {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        align-self: stretch;
+        background: var(--primary-color-60);
+        margin: 2rem 0rem 1.5rem 0rem;
+      }
+    }
+    .rightContent {
+      .personImg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media  screen and (min-width: 1024px) {
+    .careersCardBackground{
+        padding:2.64rem 13rem;
+        .careersHeading{
+            display: none;
+        }
+        .careersCard{
+            flex-direction: row;
+            padding:2.5rem 3.12rem;
+            .leftContent{
+                width: 35rem;
+            .title{
+              font-size:0.75rem;
+            }
+            .subTitle{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            }
+            .description{
+            font-size: 1.5rem;
+            }
+            .viewOpeningsBtn{
+                width: 13rem;
+            }
+            }
+            .rightContent{
+              .personImg{
+                margin-bottom: -5rem;
+              }
+            }
+        }
+    }
+}

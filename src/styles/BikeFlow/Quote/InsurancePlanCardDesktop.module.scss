@@ -1,0 +1,69 @@
+.insurancePlanCardDesktopContainer {
+  border-radius: var(--radius-radius-large, 1rem);
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 1rem 1.75rem;
+  max-width: 36rem;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  .planTopMainDetails {
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-shrink: 0;
+    .insurancePlanNameImage {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      .insurerLogoContainer {
+        width: 6.25rem;
+        // height: 4rem;
+        flex-shrink: 0;
+        border-radius: 0.5rem;
+        .insurerLogo {
+          object-fit: contain;
+        }
+      }
+      .insurancePlanNameType {
+        // display: flex;
+        .insurancePlanName {
+          color: var(--secondary-color-100);
+        }
+        .insuranceType {
+          color: var(--secondary-color-80);
+        }
+      }
+    }
+    .amountInCoverMonthYear {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      .coverAmountContainer {
+        display: flex;
+        flex-direction: column;
+        .coverAmountText {
+          color: var(--light-purple-grey-80, rgba(0, 0, 0, 0.65));
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1rem; /* 133.333% */
+          letter-spacing: -0.00375rem;
+        }
+        .coverAmount {
+          color: var(--light-sky-60, #0c5273);
+          font-weight: 700;
+          line-height: 1.5rem; /* 150% */
+        }
+      }
+        .btn {
+          color: var(--light-sky-inverse, #fff);
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1rem; /* 133.333% */
+          letter-spacing: -0.00375rem;
+        }
+    }
+  }
+}

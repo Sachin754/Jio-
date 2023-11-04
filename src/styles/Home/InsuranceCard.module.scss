@@ -1,0 +1,152 @@
+.card {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+  .title {
+    text-align: center;
+    padding: 0rem 2rem;
+  }
+  .healthInput {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .genderOptions {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-around;
+      .genderOption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        //    width: 5.33rem;
+        //    width: 8.25rem;
+        //    gap: 0.75rem;
+        height: 3rem;
+        border-radius: var(--spacing-3, 0.75rem);
+        border: 1px solid var(--primary-color-40);
+        .activeIcon {
+          color: var(--primary-color-50);
+          width: 2rem;
+          height: 2rem;
+        }
+        .inactiveIcon {
+          color: var(--primary-color-30);
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+      .inactiveGenderOption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        //    width: 5.3rem;
+        height: 3rem;
+        border-radius: var(--spacing-3, 0.75rem);
+        border: 1px solid #e0e0e0;
+        .activeIcon {
+          color: var(--primary-color-50);
+          width: 2rem;
+          height: 2rem;
+        }
+        .inactiveIcon {
+          color: var(--primary-color-30);
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+  .inputFieldContainer {
+    // display: flex;
+    width: 100%;
+
+    .inputField {
+      width: 100%;
+    }
+  }
+  .termsAndConditionsContainer {
+    display: flex;
+    gap: 0.25rem;
+    .termsAndConditionText {
+      color: var(--light-primary-grey-80, rgba(0, 0, 0, 0.65));
+      font-weight: 500;
+      line-height: 1.25rem; /* 142.857% */
+      letter-spacing: -0.00438rem;
+    }
+  }
+  .btnDividerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .btn {
+      background-color: var(--primary-color-60);
+      margin-top: -0.75rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .divider {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.2rem;
+      .line {
+        width: 8rem;
+      }
+      .orText {
+        color: var(--secondary-color-80);
+        font-weight: 700;
+        line-height: 1.25rem; /* 142.857% */
+        letter-spacing: -0.00438rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    border-radius: 0rem 0rem 1.5rem 1.5rem;
+    box-shadow: none;
+    justify-content: space-around;
+    align-items: center;
+
+    .title {
+      font-size: 1.75rem;
+
+      // font-style: normal;
+      // font-weight: 500;
+      line-height: 2rem;
+    }
+    .healthInput {
+      .genderOptions {
+        justify-content: space-between;
+        .genderOption {
+          width: 10rem;
+          gap: 0.75rem;
+        }
+        .inactiveGenderOption {
+          width: 10rem;
+          gap: 0.75rem;
+        }
+      }
+    }
+    .inputFieldContainer {
+      width: 25rem;
+      .inputField {
+        width: 100%;
+      }
+    }
+    .btnDividerText {
+      .btn {
+        width: 22rem;
+      }
+    }
+  }
+}

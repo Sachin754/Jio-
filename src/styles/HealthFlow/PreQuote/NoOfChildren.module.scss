@@ -1,0 +1,37 @@
+.card {
+  padding: 1.25rem;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  background: var(--light-primary-background, #fff);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+  .topSection {
+    .close {
+      float: right;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1.5rem;
+    gap: 1rem;
+    .options {
+      display: flex;
+
+      gap: 1rem;
+
+      .checkboxContainer {
+        width: max-content;
+        height: 2.75rem;
+        padding: 0.75rem;
+        border-radius: var(--spacing-3, 0.75rem);
+        border: 1px solid var(--light-sky-grey-40, #e0e0e0);
+      }
+    }
+  }
+}

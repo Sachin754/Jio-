@@ -1,0 +1,39 @@
+.carouselSection {
+  padding: 0.75rem 1.5rem;
+  //   .control-dots {
+  //     background-color: orange;
+  //   }
+
+  //   /* Optional: You can also customize the active indicator color */
+  //   .control-dots .dot.selected {
+  //     background-color: green;
+  //   }
+  .banner {
+    height: 10.5rem;
+    cursor: pointer;
+    .img {
+      object-fit: contain;
+    }
+  }
+}
+.desktop {
+  display: none;
+}
+@media screen and (min-width: 796px) {
+  .carouselSection {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    padding: 2rem 10rem;
+    .carouselSectionWeb {
+      .banner {
+        height: 27.5rem;
+        cursor: pointer;
+        .img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

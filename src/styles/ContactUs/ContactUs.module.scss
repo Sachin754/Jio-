@@ -1,0 +1,146 @@
+.contactUsContainer {
+  //desktop to mobile
+  // padding: 2rem 1rem;
+  .contactUsBanner {
+    height: 22.5rem;
+    background-image: url("/images/ContactUs/contactUsbanner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: -1rem;
+  }
+
+  .contactDetailsContainer {
+    margin: 4rem 8rem;
+    // padding: 4rem 1rem;
+    border-radius: 1.5rem;
+    background: #fff;
+    .contactDetails {
+      display: flex;
+      padding: 2rem;
+      align-items: flex-start;
+      gap: 2rem;
+      border-radius: 1.25rem;
+      background: #fff;
+      justify-content: space-around;
+      box-shadow: 4px 8px 32px 0px rgba(0, 0, 0, 0.08);
+      margin-top: -6rem;
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 22rem;
+        .icon {
+          width: 1.875rem;
+          height: 1.875rem;
+        }
+        .name {
+          color: #000;
+          text-align: center;
+          line-height: 1.5rem; /* 133.333% */
+          letter-spacing: -0.00563rem;
+          margin:0.5rem 0rem 1rem 0rem;
+        }
+        .value {
+          color:var(--secondary-color-80);
+          text-align: center;
+          line-height: 1.5rem; /* 150% */
+          letter-spacing: -0.005rem;
+        }
+      }
+    }
+    .contactOnWhatsApp {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      margin:4.62rem auto;
+      .chatIcon {
+        width: 2rem;
+        height: 2rem;
+      }
+      .contactOnWhatsAppText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .whatsAppBtn {
+          width: 15rem;
+          background-color: #113928;
+          margin: 0.5rem;
+          padding: 0rem;
+          .btnText {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            justify-content: center;
+          }
+        }
+        .messageToMobileNumber {
+          display: flex;
+          gap: 0.5rem;
+          .messageText {
+            display: flex;
+            gap: 0.5rem;
+          }
+        }
+        .whatsAppicon {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:769px) and (max-width:1024px)
+{
+    .contactUsContainer {
+        .contactUsBanner {
+          height: 17rem;
+          background-image: url("/images/ContactUs/contactUsbannerMobile.svg");
+        }
+        .contactDetailsContainer {
+          margin: 1rem;
+          .contactDetails{
+            align-items: center;
+          }
+        //   .contactOnWhatsAppText {
+        //     display: flex;
+        //     flex-direction: column;
+        //     gap: 0.5rem;
+        //     .messageToMobileNumber {
+        //       flex-direction: column;
+        //       gap: 0rem;
+        //       justify-content: center;
+        //       align-items: center;
+        //     }
+        //   }
+        }
+      }
+}
+@media screen and (max-width: 768px) {
+  .contactUsContainer {
+    .contactUsBanner {
+      height: 17rem;
+      background-image: url("/images/ContactUs/contactUsbannerMobile.svg");
+    }
+    .contactDetailsContainer {
+      margin: 4rem 1rem;
+      .contactDetails{
+        flex-direction: column;
+        align-items: center;
+      }
+      .contactOnWhatsAppText {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .messageToMobileNumber {
+          flex-direction: column;
+          gap: 0rem;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

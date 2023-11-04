@@ -1,0 +1,30 @@
+.confirmationSection{
+    // padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    .topContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .heading{
+            color: var(--secondary-color-100);
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 900;
+line-height: 1.75rem; /* 116.667% */
+letter-spacing: -0.045rem;
+        }
+        .subHeading{
+            color: var(--secondary-color-80);
+text-align: center;
+font-size: 0.875rem;
+font-style: normal;
+padding: 0rem 3rem;
+font-weight: 500;
+line-height: 1.25rem; /* 142.857% */
+letter-spacing: -0.00438rem;
+        }
+    }
+}

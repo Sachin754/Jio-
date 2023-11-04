@@ -1,0 +1,22 @@
+.LoadingScreen {
+  // background: var(--light-purple-inverse, #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // height: 100vh;
+  margin-top: 8rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // bottom: 0;
+  // right: 0;
+  .spinner {
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.75rem; /* 140% */
+  }
+}

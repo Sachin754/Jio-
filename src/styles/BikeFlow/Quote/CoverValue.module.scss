@@ -1,0 +1,47 @@
+.coverValueCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  .heading {
+    text-align: left;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .option {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      justify-content: space-between;
+      border-radius: var(--spacing-4, 1rem);
+      border: 1px solid var(--light-crimson-grey-40, #e0e0e0);
+      padding: 1rem;
+      .firstContainer {
+        display: flex;
+        gap: 0.25rem;
+
+        .title {
+          color: var(--secondary-color-80);
+
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.5rem;
+          letter-spacing: -0.005rem;
+        }
+      }
+      .range {
+        background-color: #f5f5f5;
+        padding: 0.75rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+  .btn {
+    background-color: var(--primary-color-60);
+    color: white;
+    width: 100%;
+  }
+}

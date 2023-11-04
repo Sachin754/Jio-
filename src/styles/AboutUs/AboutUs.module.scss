@@ -1,0 +1,41 @@
+.aboutUsContainer {
+  position:relative;
+  .headingSection {
+    text-align: center;
+    .title {
+      color: var(--primary-color-30 );
+      line-height: 2rem; /* 100% */
+      letter-spacing: -0.06rem;
+    }
+    .subTitle {
+      color: var(--primary-color-50);
+      text-align: center;
+      line-height: 2rem; /* 100% */
+      letter-spacing: -0.06rem;
+      padding: 2rem 1rem;
+      
+    }
+  }
+  .imageContainer{
+    position: absolute;
+   top:-4rem;
+   right:1rem;
+    width: 20rem;
+    height:auto;
+    
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutUsContainer {
+    .headingSection {
+      padding-top: 1rem;
+      .title {
+        font-size: 4rem;
+      }
+      .subTitle {
+        font-size: 2rem;
+      }
+    }
+  }
+}

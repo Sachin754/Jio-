@@ -1,0 +1,102 @@
+.advantagesSection {
+  padding: 1.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  .title {
+    color: var(--primary-color-40);
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1rem; /* 133.333% */
+    letter-spacing: 0.00375rem;
+    text-transform: uppercase;
+  }
+  .subtitle {
+    color: var(--secondary-color-100);
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.75rem;
+    letter-spacing: -0.045rem;
+  }
+
+  .description {
+    text-align: center;
+    color: var(--secondary-color-80);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1rem; /* 133.333% */
+    letter-spacing: -0.00375rem;
+    text-align: justify;
+  }
+  .advantages {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    gap: 0.75rem;
+    height: 10rem;
+  }
+  .advantages::-webkit-scrollbar {
+    display: none;
+  }
+  .btn {
+    border-color: var(--primary-color-50);
+    font-size: 0.875rem;
+    color: var(--primary-color-50);
+    background-color: white;
+    width: 19rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .advantagesSection {
+    padding: 4rem 7.5rem;
+
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .title {
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1rem; /* 133.333% */
+      letter-spacing: 0.00375rem;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 2rem; /* 100% */
+      letter-spacing: -0.06rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.5rem; /* 150% */
+      letter-spacing: -0.005rem;
+      width: 46rem;
+    }
+    .advantages {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      height: 12rem;
+      margin-left: 0rem;
+    }
+    .btn {
+      width: 30rem;
+      height: 3rem;
+      font-size: 1.5rem;
+      background: var(--primary-color-50);
+      color: white;
+    }
+  }
+}

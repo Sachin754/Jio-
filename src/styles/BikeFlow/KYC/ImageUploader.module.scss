@@ -1,0 +1,60 @@
+.uploadImageContainer {
+  .mainContainer {
+    width: 19.5rem;
+    height: auto;
+    .displayImageContainer {
+      border-radius: 1rem;
+      background: var(--light-primary-grey-20, #f5f5f5);
+      padding:1rem 0rem;
+      .imageContainer {
+        width: 15rem;
+        height: auto;
+        margin: 0 auto;
+        .image {
+          object-fit: contain;
+        }
+      }
+      .nameCloseIcon {
+        display: flex;
+        justify-content: space-between;
+        padding:0rem 1rem;
+        .tickWithName{
+            display: flex;
+            gap:0.5rem;
+            align-items: center;
+        }
+        .name {
+          color: var(--secondary-color-80);
+          font-weight: 500;
+          line-height: 1.25rem; /* 142.857% */
+          letter-spacing: -0.00438rem;
+        }
+        .icon {
+          width: 1rem;
+          height: 1rem;
+          color: #000093;
+        }
+      }
+    }
+   .imageDocumentInputContainer{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    margin-top:2rem;
+    .label{
+      color: var(--secondary-color-80);
+
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.25rem; /* 142.857% */
+letter-spacing: -0.00438rem;
+    }
+      .btn{
+        width: 19.5rem;
+        display: flex;
+        justify-content: center;
+      }
+   }
+}
+}

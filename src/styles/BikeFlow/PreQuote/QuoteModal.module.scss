@@ -1,0 +1,18 @@
+.modal{
+    width: 60vw;
+    padding: 1.5rem;
+    border-radius: var(--spacing-6, 2rem);
+background: #FFF;
+    position: absolute;
+    top:25rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    .topContainer{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+   
+}
+

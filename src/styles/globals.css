@@ -1,0 +1,46 @@
+/* Stepper */
+.j-stepper .j-horizontal-stepper-content{
+    margin-top:2rem;
+}
+.j-stepper .j-horizontal-stepper-item-label{
+    overflow: hidden;
+}
+
+/* BottomSheet */
+.j-bottomsheet .j-bottomsheet__content{
+    padding:0rem;
+}
+.j-listBlock{
+    --listblock-margin-top:0rem;
+    --listblock-margin-bottom: 0rem;
+}
+.primary.j-button{
+    background-color:var(--primary-color-60);
+    color:white;
+}
+.tertiary.j-button {
+    color: var(--primary-color-50);
+}
+/* spinner */
+.j-spinner label{
+    color:white;
+    z-index:9;
+    max-width: 16rem;
+}
+
+.j-button.icon-primary .j-button-icon{
+    color:var(--primary-color-50);
+}
+.secondary.j-button{
+    color:var(--primary-color-50);
+}
+.j-modal.j-modal-visible {
+    margin-top: 2rem;
+}
+.j-dropdown-wrapper{
+    width: auto;
+}
+
+@media screen and (max-width: 991px){
+  
+}

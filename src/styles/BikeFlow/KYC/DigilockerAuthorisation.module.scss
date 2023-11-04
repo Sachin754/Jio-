@@ -1,0 +1,57 @@
+.confirmationSection{
+    // padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    .topContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .heading{
+            color: var(--secondary-color-100);
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 1.75rem; /* 116.667% */
+            letter-spacing: -0.045rem;
+        }
+        .subHeading{
+            color: var(--secondary-color-90);
+            font-size: 1.4rem;
+            padding: 30px 0 5px 0;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 1.55rem; /* 142.857% */
+            letter-spacing: -0.00438rem;
+        }
+    }
+    .inputFieldsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .prosperInputFields {
+          display: flex;
+          gap: 1rem;
+          justify-content: space-evenly;
+          .prosperLabelContainer {
+            display: flex;
+            width: 11.25rem;
+            padding: var(--spacing-3, 0.75rem);
+            align-items: center;
+            gap: 0.75rem;
+            border-radius: var(--spacing-3, 0.75rem);
+            border: 1px solid var(--light-sky-grey-40, #e0e0e0);
+            .prosperInputField {
+              color: var(--secondary-color-100);
+              font-size: 0.875rem;
+              font-style: normal;
+              font-weight: 900;
+              line-height: 1.25rem; /* 142.857% */
+              letter-spacing: -0.00438rem;
+            }
+        }
+         }
+      }
+}
+

@@ -1,0 +1,11 @@
+$font-loc: '/fonts/';
+$global-overwrite-text: false;
+@import "~@jds/core/dist/styles/main";
+@include createDefaultTheme();
+
+
+html,
+body {
+  font-family: "JioType", Helvetica, sans-serif;
+}
+

@@ -1,0 +1,63 @@
+.howToBuySection{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .title{
+        text-align: center;
+        padding: 0rem 2rem;
+    }
+    .points{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+       
+              .feature {
+                display: flex;
+                gap: 1rem;
+                .featureImg {
+                  width: 2.5rem;
+                  height: 2.5rem;
+                }
+                .featureText {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 0.5rem;
+                  .featureTitle {
+                    color: var(--primary-color-80);
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    line-height: 1.5rem; /* 133.333% */
+                    letter-spacing: -0.00563rem;
+                    width: 12rem;
+                  }
+                  .featureDescription {
+                    color: var(--secondary-color-80);
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    line-height: 1.25rem; /* 142.857% */
+                    letter-spacing: -0.00438rem;
+                  }
+                }
+              }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .howToBuySection{
+        padding: 2rem 10rem;
+        .title{
+            font-size: 2.5rem;
+        }
+        .points{
+            .feature{
+                .featureText{
+            .featureTitle{
+                width: auto;
+            }
+        }
+        }
+        }
+        
+    }
+}

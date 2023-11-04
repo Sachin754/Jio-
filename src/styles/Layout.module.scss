@@ -1,0 +1,10 @@
+.mainBody{
+    margin-top: 4rem;
+    background-color: #F5F5F5;
+}
+@media screen and (max-width:768px) {
+    .mainBody{
+        margin-top: 5rem ;
+      background-color: #FFF;
+    }
+}

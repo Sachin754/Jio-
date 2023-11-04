@@ -1,0 +1,45 @@
+$font-loc: "/fonts/";
+$global-overwrite-text: false;
+@import "~@jds/core/dist/styles/main";
+@include createDefaultTheme();
+
+html,
+body {
+  font-family: 'JioType', Helvetica, sans-serif;
+  ;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --primary-color-20: var(--light-sky-20, #E5F1F7);
+  --primary-color-30: var(--light-sky-30, #89DCFF);
+  --primary-color-40: var(--light-sky-40, #67C3EF);
+  --primary-color-50: var(--light-sky-50, #0078AD);
+  --primary-color-60: var(--light-sky-60, #0C5273);
+  --primary-color-70: var(--light-sky-70, #00364E);
+  --primary-color-80: var(--light-sky-80, #001E2B);
+
+  //Golden color variables
+  
+  // --primary-color-20: var(--light-sky-20, #FFF7EC);
+  // --primary-color-30: var(--light-sky-30, #FFE6C1);
+  // --primary-color-40: var(--light-sky-40, #FBCF94);
+  // --primary-color-50: var(--light-sky-50, #D8AA67);
+  // --primary-color-60: var(--light-sky-60, #A9691D);
+  // --primary-color-70: var(--light-sky-70, #6F4404);
+  // --primary-color-80: var(--light-sky-80, #6F4404);
+
+  --secondary-color-20:var(--light-sky-grey-20,#F5F5F5);
+  --secondary-color-80: var(--light-sky-grey-80, rgba(0, 0, 0, 0.65));
+  --secondary-color-100: var(--light-purple-grey-100, #141414);
+  --white-color:var(--light-global-white, #FFF);
+}

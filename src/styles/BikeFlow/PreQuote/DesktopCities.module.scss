@@ -1,0 +1,69 @@
+.citiesSection {
+    display: flex;
+    flex-direction: column;
+    // padding: 1.5rem;
+    .cityRow {
+      display: flex;
+    //   justify-content: space-between;
+    gap: 1.5rem;
+      align-items: center;
+      margin-bottom: 10px;
+      .selectedCityName{
+        width: 9.5rem;
+        border-radius: 15.625rem;
+        color:var(--primary-color-50);
+border: 1px solid var(--primary-color-50);
+background: var(--primary-color-20);
+      }
+      .cityName{
+        width: 9.5rem;
+        color:var(--secondary-color-80);
+        border: 1px solid var(--light-crimson-grey-40, #E0E0E0);
+        
+      }
+  
+      .body-s-bold {
+        font-size: 16px;
+        margin-right: 10px;
+       
+      }
+    }
+  
+    .rtuRow {
+      display: flex;
+      margin: 1rem 0rem;
+      .rtuBtns{
+        display: flex;
+        gap: 1rem;
+        // width: max-content;
+        flex-wrap: wrap;
+        .selectedRtuBtn{
+            width: 6.25rem;
+            color:var(--primary-color-50);
+            // border: 1px solid var(--primary-color-50);
+            background: var(--primary-color-20);
+            
+        }
+        .rtuBtn{
+            width: 6.25rem;
+            color: #141414;
+            background-color: #F5F5F5;
+        }
+      }
+  
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 0.25rem;
+  
+        li {
+          margin-right: 10px;
+          .body-xs {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }

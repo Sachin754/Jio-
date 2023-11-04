@@ -1,0 +1,57 @@
+.insuredDetailsContainer {
+  padding: var(--spacing-spacing-base, 1rem) var(--spacing-spacing-m, 1.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-spacing-s, 0.75rem);
+  .fieldsContainer {
+
+    .inputFields {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      .nameDOB {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .heightWeight {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        .height {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .insuredDetailsContainer {
+    .fieldsContainer {
+      .inputFields {
+        .nameDOB {
+          flex-direction: row;
+          gap: 2.5rem;
+          .nameField {
+            width: 22.5rem;
+          }
+          .DOBField {
+            width: 20rem;
+          }
+        }
+        .heightWeight {
+          flex-direction: row;
+          .heightField {
+            width: 10.5rem;
+          }
+          .weightField {
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}

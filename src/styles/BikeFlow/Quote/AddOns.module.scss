@@ -1,0 +1,59 @@
+.addOnFilters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 1.5rem;
+  .heading {
+    margin-bottom: 0.5rem;
+  }
+  .addOnSection {
+    .addonOptions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .option {
+      border-radius: var(--spacing-4, 1rem);
+      border: 1px solid var(--light-crimson-grey-40, #e0e0e0);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .range {
+        border-radius: var(--spacing-4, 1rem);
+        background: var(--light-crimson-grey-20, #f5f5f5);
+        padding: 0.75rem;
+      }
+    }
+    .accessories {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .discounts {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .sort {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .addOnFilters {
+    gap: 0rem;
+    .heading {
+      color: var(--light-sky-80, #001e2b);
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 1.25rem; /* 125% */
+      letter-spacing: -0.03rem;
+    }
+  }
+}
